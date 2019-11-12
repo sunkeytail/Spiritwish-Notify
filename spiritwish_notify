@@ -1,0 +1,9 @@
+<?php
+
+require_once './vendor/autoload.php';
+
+$token = 'LINE_NOTIFY_TOKEN';
+$ln = new KS\Line\LineNotify($token);
+
+$text = 'สวัสดี Spiritwish';
+$ln->send($text);
